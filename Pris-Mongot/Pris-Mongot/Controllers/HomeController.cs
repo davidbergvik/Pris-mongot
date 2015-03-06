@@ -26,5 +26,17 @@ namespace Pris_Mongot.Controllers
 
             return View();
         }
+        public ActionResult Welcome()
+        {
+            //TODO hämta username ur cookie eller db
+            ViewBag.UserName = "Här ska vi skriva in ett användarnamn";
+
+            //Hämta antal vunna/förlorade matcher ur DB
+            ViewBag.Won = "5";
+            ViewBag.Lost = "3";
+
+
+            return View();
+        }
     }
 }
